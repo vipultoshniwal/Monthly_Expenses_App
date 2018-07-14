@@ -6,5 +6,7 @@ urlpatterns = [
     url(r'^show/',views.Home_Logs),
     url(r'^AddExpenses/',views.AddExpenses),
     url(r'^update/',views.update),
+    url(r'^Login/',views.Login),
+    
     
 ]
