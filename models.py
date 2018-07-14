@@ -1,9 +1,9 @@
 
-class User_Info(models.Model):
+class UserInfo(models.Model):
     User_id = models.IntegerField(primary_key=True)
     User_name =models.CharField(max_length=20)
    
-class Expense_Category(models.Model):
+class ExpenseCategory(models.Model):
     Breakfast = models.IntegerField(max_length=15)
     Trip = models.IntegerField(max_length=15)
     Hangout = models.IntegerField(max_length=15)
