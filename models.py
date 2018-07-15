@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+from datetime import datetime
+from django.db import models
+from  MonthlyExpensesApp views
 
-class UserInfo(models.Model):
-    Userid = models.IntegerField(primary_key=True)
-    Username =models.CharField(max_length=20)
-   
-class ExpenseCategory(models.Model):
-    Breakfast = models.IntegerField(max_length=15)
-    Trip = models.IntegerField(max_length=15)
-    Hangout = models.IntegerField(max_length=15)
-    Username = models.ForeignKey(UserInfo, on_delete=models.CASCADE)
+class ExpenseType(models.Model):
+    username = models.IntegerField(max_length=50)
+    Breakfast = models.IntegerField(max_length=50)
+    Trip = models.IntegerField(max_length=50)
+    Hangout = models.IntegerField(max_length=50)
