@@ -1,11 +1,13 @@
-# -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 from datetime import datetime
 from django.db import models
-from  MonthlyExpensesApp views
 
-class ExpenseType(models.Model):
-    username = models.IntegerField(max_length=50)
-    Breakfast = models.IntegerField(max_length=50)
-    Trip = models.IntegerField(max_length=50)
-    Hangout = models.IntegerField(max_length=50)
+class Expensecategories(models.Model):
+    Username = models.CharField(max_length=50)
+    Breakfast = models.CharField(max_length=50)
+    Trip = models.IntegerField()
+    Hangout = models.IntegerField()
+
+    def __str__(self):
+         return self.Username,self.Breakfast
