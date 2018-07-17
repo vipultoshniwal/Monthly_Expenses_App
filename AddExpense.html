@@ -2,10 +2,10 @@
 <head>
 </head><form action="/update/" method="POST">
     {% csrf_token %}
-    enter Username:<input name="P1"><br><br>
-    enter Breakfast:<input name="P2"><br>
-    enter Trip:<input name="P3"><br>
-    enter Hangout:<input name="P4"><br>
+    enter Username:<input type="text" name="P1"><br><br>
+    enter Breakfast:<input type="text" name="P2"><br>
+    enter Trip:<input type="number" name="P3"><br>
+    enter Hangout:<input type="number" name="P4"><br>
 
     <input type="submit" value="submit">
 </form>
@@ -13,7 +13,6 @@
 
 </body>
 </html>
-
 
 
 
